@@ -12,9 +12,9 @@
         <nav>
             <img src="./assets/FES.svg" class= "logo" alt="">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav__link"href="#about">About</a></li>
+                <li><a class="nav__link" href="#discord">Discord</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <header>
@@ -22,7 +22,7 @@
             <div>
                 <h1>Best place to learn Frontend</h1>
                 <p class="sub-head">Go from absolute beginne to pro with a simplified process</p>
-                <button><a href="" class="button">Start Now</a></button>
+                <button>Start Now</button>
             </div>
             <div>
                 <figure>
@@ -37,9 +37,9 @@
         <section id="about">
             <h2>About</h2>
             <div class="section__description">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quia dolore totam explicabo quaerat fugit deleniti veniam adipisci at! Ipsam velit dicta porro sit, magni totam aut quos nam consequatur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quia dolore totam explicabo quaerat fugit deleniti veniam adipisci at! Ipsam velit dicta porro sit, magni totam aut quos nam consequatur.</p>
+            <div class="section__description--wrapper">
+                <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quia dolore totam explicabo quaerat fugit deleniti veniam adipisci at! Ipsam velit dicta porro sit, magni totam aut quos nam consequatur.</p>
+                <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quia dolore totam explicabo quaerat fugit deleniti veniam adipisci at! Ipsam velit dicta porro sit, magni totam aut quos nam consequatur.</p>
             </div>
             <figure class="about__img--wrapper">
                 <img src="./assets/about.jpg" alt="">
@@ -49,34 +49,38 @@
 
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="section__description">
+            <figure class="about__img--wrapper">
                 <img src="./assets/discord.png" alt="">
             </figure>
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sequi quos? Ipsum alias molestias quas consequuntur in, quibusdam perferendis praesentium earum corporis asperiores nisi odio qui, labore sed iure quae?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sequi quos? Ipsum alias molestias quas consequuntur in, quibusdam perferendis praesentium earum corporis asperiores nisi odio qui, labore sed iure quae?</p>
+            <div class="section__description--wrapper">
+                <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sequi quos? Ipsum alias molestias quas consequuntur in, quibusdam perferendis praesentium earum corporis asperiores nisi odio qui, labore sed iure quae?</p>
+                <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sequi quos? Ipsum alias molestias quas consequuntur in, quibusdam perferendis praesentium earum corporis asperiores nisi odio qui, labore sed iure quae?</p>
             </div>
-            
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
+            <div class="section__description">
             <form action="">
                 <span>Email</span>
                 <input type="text" placeholder="Jdoe@email.com">
                 <span>Message</span>
-                <textarea type="text" placeholder="Message here">,</textarea>
+                <textarea type="text" placeholder="Message here"></textarea>
+                <button class="form__button">Contact Us</button>
             </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#Contact">Contact</a>
-            <a href="#Courses">#Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#Contact">Contact</a>
+            <a class="footer__link" href="#Courses">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
